@@ -65,6 +65,7 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
+    { netspeed_rx,    " %s ",           "wlp3s0" },
     { run_command,     " %s  ",           "amixer -D pulse sget Master | tail -n1 | awk '/%/ {print $5}' | tr -d '[]'" },
     { battery_state,    "%s ",           "BAT0" },         
     { battery_perc,     "%s%% ",           "BAT0" },         
